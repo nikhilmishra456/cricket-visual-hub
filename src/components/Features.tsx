@@ -27,16 +27,16 @@ const Features = () => {
   ];
 
   return (
-    <section className="py-16 bg-cricket-secondary/30">
+    <section className="py-16 bg-gradient-to-br from-purple-100 to-white">
       <div className="container">
-        <h2 className="text-3xl font-bold text-center mb-12">Top Features</h2>
+        <h2 className="text-3xl font-display font-bold text-center mb-12 text-cricket-primary">Top Features</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {features.map((feature, index) => (
-            <Card key={index} className="hover:shadow-lg transition-shadow">
+            <Card key={index} className="group hover:shadow-xl transition-all duration-300 border-none bg-gradient-to-br from-white to-cricket-secondary/20 hover:scale-105">
               <CardHeader>
-                <feature.icon className="h-10 w-10 text-cricket-accent mb-4" />
-                <CardTitle>{feature.title}</CardTitle>
-                <CardDescription>{feature.description}</CardDescription>
+                <feature.icon className="h-10 w-10 text-cricket-accent mb-4 group-hover:scale-110 transition-transform" />
+                <CardTitle className="font-display">{feature.title}</CardTitle>
+                <CardDescription className="font-body">{feature.description}</CardDescription>
               </CardHeader>
             </Card>
           ))}
