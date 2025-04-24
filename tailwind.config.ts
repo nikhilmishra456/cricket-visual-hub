@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -18,10 +19,6 @@ export default {
       },
     },
     extend: {
-      fontFamily: {
-        display: ['Playfair Display', 'serif'],
-        body: ['Inter', 'sans-serif'],
-      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -29,9 +26,9 @@ export default {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         cricket: {
-          primary: "#4A148C",
-          secondary: "#F3E5F5",
-          accent: "#FF5722",
+          primary: "#0C4B05",
+          secondary: "#E8F3D6",
+          accent: "#F97316",
         },
         primary: {
           DEFAULT: "hsl(var(--primary))",

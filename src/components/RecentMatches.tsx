@@ -28,22 +28,22 @@ const RecentMatches = () => {
   ];
 
   return (
-    <section className="py-16 bg-gradient-to-br from-purple-50 to-white">
+    <section className="py-16 bg-gray-50">
       <div className="container">
-        <h2 className="text-3xl font-display font-bold text-center mb-12 text-cricket-primary">Recent Matches</h2>
+        <h2 className="text-3xl font-bold text-center mb-12">Recent Matches</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {matches.map((match, index) => (
-            <Card key={index} className="group hover:shadow-xl transition-all duration-300 bg-white border-none shadow-lg hover:scale-105 overflow-hidden">
-              <CardHeader className="bg-gradient-to-br from-cricket-primary/5 to-cricket-secondary/20">
-                <CardTitle className="flex items-center gap-2 font-display">
+            <Card key={index} className="hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
                   <Trophy className="h-5 w-5 text-cricket-accent" />
                   {match.team1} vs {match.team2}
                 </CardTitle>
               </CardHeader>
-              <CardContent className="mt-4">
-                <div className="space-y-3">
-                  <p className="text-sm font-body">{match.team1}: {match.score1}</p>
-                  <p className="text-sm font-body">{match.team2}: {match.score2}</p>
+              <CardContent>
+                <div className="space-y-2">
+                  <p className="text-sm">{match.team1}: {match.score1}</p>
+                  <p className="text-sm">{match.team2}: {match.score2}</p>
                   <p className="text-sm font-medium text-cricket-primary">{match.result}</p>
                 </div>
               </CardContent>
